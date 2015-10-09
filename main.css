@@ -1,0 +1,109 @@
+@charset "utf-8";
+/*****************************
+Colours
+    main background: #222;
+    content background:#444;
+    footer background: #333;
+    borders on header and main: #666;
+    main text: #d4d4d4;
+    header text: #eee;
+    footer text: #999;
+    anchor text: gold;
+    anchor hover: #fff;
+    text shadows - #000 (bottom right) and gold (top left)
+
+Fonts
+'Helvetica Neue', Calibri, Verdana, sans-serif;
+
+Images
+http://griffis.edumedia.ca/mad9013/html-only/saturn.v1.jpg
+
+
+
+
+-How to locally link images in #masthead and with NASA logo in html file
+-how to get different fonts working in brackets
+
+******************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Calibri, Verdana, sans-serif;
+
+}
+html, body{
+    background-color: #222;
+    font-size: 3vh; /* default font-size = 1.0rem */
+}
+h1{
+    font-size: 54px;
+    color:white;
+    text-shadow: 2px 2px 2px #000, -2px -2px 2px gold;
+    text-align: center;
+    padding: 42px;
+}
+h3{
+    font-family: Calibri;
+    color: #eee;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+nav a, nav a:link, nav a:visited{
+    text-decoration: none;
+    color: gold;
+    font-size: 26px;
+    
+}
+nav a:hover, nav a:active{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul{
+    padding: 8px;
+    border: 6px solid #666;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 10px;
+    text-align: center;
+    background-color: #444;
+}
+nav li{
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#wrapper{
+    width: 700px;
+    margin: 0 auto;
+}
+#masthead{
+background: url(img/saturn.jpg) no-repeat center;
+height:150px;
+
+}
+#main{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #444;
+    color: #d4d4d4;
+}
+#footer{
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #333;
+}
+#footer p{
+    color: #999;
+    font-size: 18px;
+}
+#footer a{
+    color:gold;
+    font-size: 18px;
+}
